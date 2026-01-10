@@ -1,1 +1,2 @@
 
+const obfexALS={decode:t=>{try{const e=atob(t).split("").reverse().join(""),r="ABCDEFGHIJKLMNOPQRSTUVWXYZ234567=",n=[];let o=0,a=0,i=0;for(let t=0;t<e.length;t++){let s=r.indexOf(e[t].toUpperCase());if(s<0)continue;o=(o<<5)|s,a+=5,a>=8&&(n.push(String.fromCharCode((o>>(a-8))&255)),a-=8)}const s=decodeURIComponent(escape(n.join("")));return obfexASeries.initMemory(s),s}catch(t){return console.error("Kod çözme hatası:",t),null}}};
